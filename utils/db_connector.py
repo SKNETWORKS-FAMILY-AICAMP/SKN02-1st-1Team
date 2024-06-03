@@ -1,7 +1,7 @@
 import pymysql
 
 class Connector :
-    conn = None
+    __connector = None
     host = '127.0.0.1'
     user = 'root'
     password = '1234'
@@ -9,10 +9,10 @@ class Connector :
     charset = 'utf8'
 
     def get_connection(self) :
-        if self.conn is None :
-            self.conn = pymysql.connect(host = self.host, 
+        if self.__connector is None :
+            self.__connector = pymysql.connect(host = self.host, 
                                         user = self.user, 
                                         password = self.password, 
                                         db = self.db, 
                                         charset = self.charset)
-        return self.conn
+        return self.__connector
