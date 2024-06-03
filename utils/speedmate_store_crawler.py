@@ -16,7 +16,7 @@ driver = Chrome()
 driver.get(url)
 time.sleep(1.5)
 
-conn = Connector().get_connection()
+conn = Connector.get_connection()
 cur = conn.cursor()
 
 for i in range(1, 18) :

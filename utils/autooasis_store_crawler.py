@@ -17,8 +17,8 @@ driver = Chrome()
 driver.get(url)
 time.sleep(2)
 
-# conn = Connector().get_connection()
-# cur = conn.cursor()
+conn = Connector.get_connection()
+cur = conn.cursor()
 
 for i in range(1, 18) :
     # 지역 select --- 화살표 클릭
@@ -70,9 +70,9 @@ for i in range(1, 18) :
         address = address[7:]
         data.append([store_name, postcode, address, address.split()[0], address.split()[1], address.split()[2]])
 
-        # query = f"INSERT INTO {table_name} VALUES ('{store_name}', '{postcode}', '{address}', '{address.split()[0]}', '{address.split()[1]}', '{address.split()[2]}')"
-        # print(store_name, postcode, address)
-        # cur.execute(query)
+        query = f"INSERT INTO {table_name} VALUES ('{store_name}', '{postcode}', '{address}', '{address.split()[0]}', '{address.split()[1]}', '{address.split()[2]}')"
+        print(store_name, postcode, address)
+        cur.execute(query)
 
     print(page_cnt)
     for p in range(1,page_cnt) :
@@ -90,12 +90,12 @@ for i in range(1, 18) :
             address = address[7:]
             data.append([store_name, postcode, address, address.split()[0], address.split()[1], address.split()[2]])
 
-#             query = f"INSERT INTO {table_name} VALUES ('{store_name}', '{postcode}', '{address}', '{address.split()[0]}', '{address.split()[1]}', '{address.split()[2]}')"
-#             print(store_name, postcode, address)
-#             cur.execute(query)
+            query = f"INSERT INTO {table_name} VALUES ('{store_name}', '{postcode}', '{address}', '{address.split()[0]}', '{address.split()[1]}', '{address.split()[2]}')"
+            print(store_name, postcode, address)
+            cur.execute(query)
 
-# conn.commit()
-# conn.close()
+conn.commit()
+conn.close()
 
 # data to CSV file
 file_name = f'./data/{table_name}.csv'

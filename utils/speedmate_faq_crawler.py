@@ -18,7 +18,7 @@ for j in range(1, 3):
     driver.get(url)
     time.sleep(1)
 
-    conn = Connector().get_connection()
+    conn = Connector.get_connection()
     cur = conn.cursor()
 
     questions = driver.find_elements(By.CSS_SELECTOR, 'div#tabFaq > dl > dt > strong')
