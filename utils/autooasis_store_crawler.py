@@ -2,11 +2,13 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.alert import Alert
+from db_connector import Connector
 import time
 import requests
 import pandas as pd
 
 data = []
+table_name = 'autooasis_store'
 
 url = 'https://www.autooasis.com/brand'
 r = requests.get(url)
@@ -15,6 +17,8 @@ driver = Chrome()
 driver.get(url)
 time.sleep(2)
 
+# conn = Connector().get_connection()
+# cur = conn.cursor()
 
 for i in range(1, 18) :
     # 지역 select --- 화살표 클릭
@@ -62,7 +66,13 @@ for i in range(1, 18) :
     for store in store_list:
         store_name = store.find_element(By.CLASS_NAME, "branch_title").text
         address = store.find_element(By.CLASS_NAME, "branch_address").text
-        data.append([store_name, address])
+        postcode = address[1:6]
+        address = address[7:]
+        data.append([store_name, postcode, address, address.split()[0], address.split()[1], address.split()[2]])
+
+        # query = f"INSERT INTO {table_name} VALUES ('{store_name}', '{postcode}', '{address}', '{address.split()[0]}', '{address.split()[1]}', '{address.split()[2]}')"
+        # print(store_name, postcode, address)
+        # cur.execute(query)
 
     print(page_cnt)
     for p in range(1,page_cnt) :
@@ -76,9 +86,19 @@ for i in range(1, 18) :
         for store in store_list:
             store_name = store.find_element(By.CLASS_NAME, "branch_title").text
             address = store.find_element(By.CLASS_NAME, "branch_address").text
-            data.append([store_name, address])
+            postcode = address[1:6]
+            address = address[7:]
+            data.append([store_name, postcode, address, address.split()[0], address.split()[1], address.split()[2]])
+
+#             query = f"INSERT INTO {table_name} VALUES ('{store_name}', '{postcode}', '{address}', '{address.split()[0]}', '{address.split()[1]}', '{address.split()[2]}')"
+#             print(store_name, postcode, address)
+#             cur.execute(query)
+
+# conn.commit()
+# conn.close()
 
 # data to CSV file
-columns = ["지점명", "주소"]
+file_name = f'./data/{table_name}.csv'
+columns = ["지점명", "우편번호", "주소", "지역구분1", "지역구분2", "지역구분3"]
 result_df = pd.DataFrame(data, columns = columns)
-result_df.to_csv('./autooasis_store.csv', index=False)
+result_df.to_csv(file_name, index=False)
