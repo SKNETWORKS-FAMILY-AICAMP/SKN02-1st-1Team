@@ -22,16 +22,19 @@ PL : 구선아
 
 ### 개발환경
 
-<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-
+<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">   
+github, git : 버전관리를 위해
 ### 데이터 수집 및 처리
 
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"><img src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white">
-
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"><img src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white">   
+mysql : 대량의 데이터를 저장하기 위함. python에 pymysql과 같은 라이브러리를 통해 쉬운 구현이 가능
+python : 다양한 데이터분석 라이브러리가 제공됨
+selenium : javascript등으로 인해 웹페이지에서 동적으로 작동하는 데이터를 수집하기 위해 사용
 ### 웹페이지 구현
 
 <img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"><img src="https://img.shields.io/badge/folium-77B829?style=for-the-badge&logo=folium&logoColor=white">
-
+streamlit : 간단하게 웹페이지가 구현 가능하며 데이터를 표현하기 적합함
+folium : 지도의 위도경도 데이터를 사용하여 여러가지 시각화를 할 수 있음 
 # 기능
 
 ## 1. 연도별 차량등록 수 확인
