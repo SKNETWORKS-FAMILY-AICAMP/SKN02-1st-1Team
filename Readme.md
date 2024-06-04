@@ -79,3 +79,33 @@ Connector class 구현 - DB Connection이 singleton으로 사용될 수 있도�
 초기화(인수 없음) - 내부에 가지고 있는 DB 정보들로 초기화하고, 한 번 초기화 된 이후 다시 초기화 시도 시, 예외 발생하도록 함.   
 get_connection(인수 없음, return connector 객체) - 외부에서 접근할 수 있는 classmethod로 작성, 외부에서 connector를 반환받을 수 있다.   
 select_all(인수: 테이블명, return cursor 객체) - 외부에서 테이블 이름으로 전체 테이블 조회할 수 있는 쿼리 제공
+
+# 디렉토리구조
+C:.
+│  my_app.py
+│  Readme.md
+│  requirements.txt
+│  
+├─data
+│      address_code.csv
+│      autooasis_store.csv
+│      car_enrollment_year.csv
+│      driving_distance.csv
+│      geo_sig.json
+│      speedmate_faq.csv
+│      speedmate_store.csv
+│      
+├─img
+│      ERD.png
+│      h1_speedMate01.png
+│      screenshot1.png
+│      screenshot2.png
+│      screenshot3.png
+│      screenshot4.png
+│      
+└─utils
+    │  autooasis_store_crawler.py
+    │  db_connector.py
+    │  folium_graph.py
+    │  speedmate_faq_crawler.py
+    │  speedmate_store_crawler.py
