@@ -46,14 +46,14 @@ get_graph(인수: 테이블명, total 사용 여부=기본값 False, return Foli
 total 사용할 시에는 addr_code 값을 키로, total 값을 밸류로 사용하여 그래프를 생성한다.   
 기본적으로는 인수로 들어온 전체 테이블을 조회하여  addr_code의 숫자를 세어 해당 점포 수를 누적시킨다.   
 total 사용할 시에는 addr_code 값을 키로, total 값을 밸류로 사용하여 그래프를 생성한다.
-
+<img src="/img/screenshot2.png">
 ## 3. FAQ
 
 my_app - web에 strreamlit을 이용하여 웹을 만들기 위함   
 class View : FAQ 분류, 질문, 답변의 형태로 된 데이터프레임을 입력받아 저장   
 ViewAllFAQ() : 질문과 답변 분류로 된 데이터프레임을 expander()와 container()를 이용하여 클릭시 확장되며 해당 답변을 확인할 수 있도록 구성   
 st.divider() : 페이지 마지막 부분을 구분짓기 위해 구분선 추가
-
+<img src="/img/screenshot3.png">
 ## 4. db연결
 
 db_connector.py   
