@@ -81,6 +81,7 @@ get_connection(인수 없음, return connector 객체) - 외부에서 접근할 
 select_all(인수: 테이블명, return cursor 객체) - 외부에서 테이블 이름으로 전체 테이블 조회할 수 있는 쿼리 제공
 
 # 디렉토리구조
+```
 C:.
 │  my_app.py
 │  Readme.md
@@ -109,3 +110,4 @@ C:.
     │  folium_graph.py
     │  speedmate_faq_crawler.py
     │  speedmate_store_crawler.py
+```
