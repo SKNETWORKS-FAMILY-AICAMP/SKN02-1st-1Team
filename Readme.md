@@ -35,7 +35,7 @@
 ## 1. 연도별 차량등록 수 확인
 
 csv파일로 된 차량등록수 데이터를 read_csv함수로 읽어들여오고 matplotlib 라이브러리를 이용하여 bar chart 를 만든다.
-!(./img/screenshot1.png)
+<img src="/img/screenshot1.png">
 
 ## 2. 지역별 차량 주행량 확인, 지역별 스피드메이트, Autooasis 지점수 비교
 
