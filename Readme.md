@@ -19,7 +19,7 @@
 
 ### 개발환경
 
-![image.png](img/d1702de4-db47-45ab-a282-9774527df92c.png)![image.png](img/8ccd6567-f18f-46ef-ba02-4657ea5e36d4.png)![image.png](127af63d-3b2f-4060-b475-569a05b212fd.png)
+![image.png](img/d1702de4-db47-45ab-a282-9774527df92c.png)![image.png](img/8ccd6567-f18f-46ef-ba02-4657ea5e36d4.png)![image.png](img/127af63d-3b2f-4060-b475-569a05b212fd.png)
 
 ### 데이터 수집 및 처리
 
