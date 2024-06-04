@@ -46,7 +46,6 @@ def get_graph(table_name, total=False) :
                 fill_opacity=0.7,
                 line_opacity=0.2,
                 key_on='properties.SIG_CD',
-                legend_name="지역구별 autooasis 지점 수",
                 nan_fill_color="white",
                 line_color='red',
                 line_weight=0.3
