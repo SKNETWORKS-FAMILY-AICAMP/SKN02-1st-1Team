@@ -20,15 +20,15 @@
 
 ### 개발환경
 
-![image.png](d1702de4-db47-45ab-a282-9774527df92c.png)![image.png](8ccd6567-f18f-46ef-ba02-4657ea5e36d4.png)![image.png](127af63d-3b2f-4060-b475-569a05b212fd.png)
+<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
 ### 데이터 수집 및 처리
 
-![image.png](bded2042-8d1f-4bb8-b49d-fa508c25b5b8.png)![image.png](d7f58c02-e063-4a84-9680-11d7f333698e.png)![image.png](65d6632b-c685-4385-aa36-1e7ea023f717.png)![image.png](ba4d38a7-b5da-474d-b20c-081bbb78236e.png)
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"><img src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white">
 
 ### 웹페이지 구현
 
-![image.png](27dcda40-0b0c-4464-997a-bf4603eef32d.png)![image.png](dee35bd4-f250-4646-a2dc-03d599e5ed42.png)![image.png](9e19efee-f8dd-4d4c-981a-0c7537a8259b.png)
+<img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"><img src="https://img.shields.io/badge/folium-77B829?style=for-the-badge&logo=folium&logoColor=white">
 
 # 기능
 
