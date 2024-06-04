@@ -80,7 +80,7 @@ select_all(인수: 테이블명, return cursor 객체) - 외부에서 테이블 
 > 데이터기간 : 2023
 > 구분 : 시도명/시군구
 ### 스피드메이트, 오토오아시스 지점 위치
-> 스피드메이트 정보 :  스피드메이트 지점찾기
-> 경로 : https://www.speedmate.com/reserve/FindBranchList
-> 오토오아시스 정보 : 오토오아시스 지점찾기
+> 스피드메이트 정보 :  스피드메이트 지점찾기   
+> 경로 : https://www.speedmate.com/reserve/FindBranchList   
+> 오토오아시스 정보 : 오토오아시스 지점찾기   
 > 경로 : https://www.autooasis.com/brand 
