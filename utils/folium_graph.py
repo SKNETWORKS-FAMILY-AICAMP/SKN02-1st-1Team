@@ -18,7 +18,7 @@ def get_graph(table_name, total=False) :
         result = Counter(df3['addr_code'])
 
     # 대한민국 시,군,구의 경계 GeoJSON 파일 경로
-    geojson_path = 'TL_SCCO_SIG.json' 
+    geojson_path = 'data/geo_sig.json' 
 
     # 시,군,구 경계 GeoJSON 파일 로드
     geo_data = json.load(open(geojson_path, encoding='utf-8'))
