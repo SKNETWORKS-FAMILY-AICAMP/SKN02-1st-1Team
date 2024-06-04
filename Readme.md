@@ -19,15 +19,15 @@
 
 ### 개발환경
 
-![image.png](d1702de4-db47-45ab-a282-9774527df92c.png)![image.png](8ccd6567-f18f-46ef-ba02-4657ea5e36d4.png)![image.png](127af63d-3b2f-4060-b475-569a05b212fd.png)
+![image.png](img/d1702de4-db47-45ab-a282-9774527df92c.png)![image.png](img/8ccd6567-f18f-46ef-ba02-4657ea5e36d4.png)![image.png](127af63d-3b2f-4060-b475-569a05b212fd.png)
 
 ### 데이터 수집 및 처리
 
-![image.png](bded2042-8d1f-4bb8-b49d-fa508c25b5b8.png)![image.png](d7f58c02-e063-4a84-9680-11d7f333698e.png)![image.png](65d6632b-c685-4385-aa36-1e7ea023f717.png)![image.png](ba4d38a7-b5da-474d-b20c-081bbb78236e.png)
+![image.png](img/bded2042-8d1f-4bb8-b49d-fa508c25b5b8.png)![image.png](img/d7f58c02-e063-4a84-9680-11d7f333698e.png)![image.png](img/65d6632b-c685-4385-aa36-1e7ea023f717.png)![image.png](img/ba4d38a7-b5da-474d-b20c-081bbb78236e.png)
 
 ### 웹페이지 구현
 
-![image.png](27dcda40-0b0c-4464-997a-bf4603eef32d.png)![image.png](dee35bd4-f250-4646-a2dc-03d599e5ed42.png)![image.png](9e19efee-f8dd-4d4c-981a-0c7537a8259b.png)
+![image.png](img/27dcda40-0b0c-4464-997a-bf4603eef32d.png)![image.png](img/dee35bd4-f250-4646-a2dc-03d599e5ed42.png)![image.png](img/9e19efee-f8dd-4d4c-981a-0c7537a8259b.png)
 
 # How to use?
 
