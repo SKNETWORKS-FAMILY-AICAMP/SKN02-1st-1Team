@@ -122,7 +122,7 @@ st.title('자동차 현황 및 영업점 분석')
 # st.title('_Streamlit_ is :blue[cool] :sunglasses:')
 
 ### TAP SETTING ###
-tab1, tab2, tab3, FAQ = st.tabs(['전국 자동차 등록 현황', '전국 자동차 통행량', '영업장', 'FAQ'])
+tab1, tab2, tab3, FAQ = st.tabs(['전국 자동차 등록 현황', '전국 자동차 주행거리', '영업장', 'FAQ'])
 f_faq = pd.read_csv('data/speedmate_faq.csv')
 f_faq_c = pd.DataFrame(f_faq)
 f_faq_c = f_faq_c.drop_duplicates(['분류'])
@@ -147,7 +147,7 @@ with tab1:
     st.pyplot(fig)
 
 with tab2:
-    st.header('전국 자동차 통행량')
+    st.header('전국 자동차 주행거리')
     folium_static(graph.get_graph('driving_distance', True))
 
 with tab3:
