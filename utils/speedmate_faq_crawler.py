@@ -2,7 +2,7 @@ import requests
 import time
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
-from db_connector import Connector
+from .db_connector import Connector
 import pandas as pd
 
 # 질문 분류 / 질문 / 답변 담을 리스트 초기화

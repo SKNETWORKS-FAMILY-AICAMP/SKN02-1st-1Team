@@ -1,7 +1,7 @@
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from db_connector import Connector
+from .db_connector import Connector
 import time
 import requests
 import pandas as pd
