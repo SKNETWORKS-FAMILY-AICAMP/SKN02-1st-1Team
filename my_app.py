@@ -42,26 +42,19 @@ class View:
 #####################################################33
 # count_res = Counter(df['주소'])
 df3 = pd.read_csv('./data/autooasis_store.csv')
-count_res = Counter(df3['address_code'])
+count_res3 = Counter(df3['address_code'])
 
 # 대한민국 시,군,구의 경계 GeoJSON 파일 경로
 geojson_path = 'data/geo_sig.json' 
 
 # 시,군,구 경계 GeoJSON 파일 로드
-geo_data = json.load(open(geojson_path, encoding='utf-8'))
-
-# 지점이 없는 시,군,구는 GeoJSON 파일에서 데이터 제거
-for feature in geo_data['features']:
-    region_name = feature['properties']['SIG_CD']
-    if region_name not in count_res:
-        geo_data['features'].remove(feature)
+geo_data3 = json.load(open(geojson_path, encoding='utf-8'))
 
 # Folium 지도 초기화
-
 m = folium.Map(location=[36.5, 127.5], zoom_start=6)
 
 folium.GeoJson(
-    geo_data,
+    geo_data3,
     name='지역구',
     style_function=lambda feature: {
         "fillColor": "#ffff00",
@@ -71,8 +64,8 @@ folium.GeoJson(
     }
 ).add_to(m)
 
-folium.Choropleth(geo_data=geo_data,
-             data=count_res  , 
+folium.Choropleth(geo_data=geo_data3,
+             data=count_res3, 
              fill_color='YlOrRd', # 색상 변경도 가능하다
              fill_opacity=0.7,
              line_opacity=0.2,
@@ -87,20 +80,16 @@ folium.Choropleth(geo_data=geo_data,
 #####################################################33
 # count_res = Counter(df['주소'])
 df4 = pd.read_csv('./data/speedmate_store.csv')
-count_res_2 = Counter(df4['address_code'])
+count_res_4 = Counter(df4['address_code'])
 
-# 지점이 없는 시,군,구는 GeoJSON 파일에서 데이터 제거
-for feature in geo_data['features']:
-    region_name = feature['properties']['SIG_CD']
-    if region_name not in count_res:
-        geo_data['features'].remove(feature)
+# 시,군,구 경계 GeoJSON 파일 로드
+geo_data4 = json.load(open(geojson_path, encoding='utf-8'))
 
 # Folium 지도 초기화
-
 m2 = folium.Map(location=[36.5, 127.5], zoom_start=6)
 
 folium.GeoJson(
-    geo_data,
+    geo_data4,
     name='지역구',
     style_function=lambda feature: {
         "fillColor": "#ffff00",
@@ -110,8 +99,8 @@ folium.GeoJson(
     }
 ).add_to(m2)
 
-folium.Choropleth(geo_data=geo_data,
-             data=count_res_2  , 
+folium.Choropleth(geo_data=geo_data4,
+             data=count_res_4  , 
              fill_color='YlOrRd', # 색상 변경도 가능하다
              fill_opacity=0.7,
              line_opacity=0.2,
