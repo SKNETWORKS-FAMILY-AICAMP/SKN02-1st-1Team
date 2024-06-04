@@ -6,10 +6,12 @@ import pandas as pd
 from .db_connector import Connector
 
 def get_graph(table_name, total=False) :
-    SQL = 'SELECT * FROM %s' %(table_name)
+    SQL = f'SELECT * FROM {table_name}'
+    print(SQL)
     # db 커넥션을 이용해 데이터를 pandas dataframe으로 변환함
     conn = Connector.get_connection()
     df3 = pd.read_sql(SQL, conn)
+    conn.close()
     result = None
 
     if total :
