@@ -63,8 +63,6 @@ csv파일로 된 차량등록수 데이터를 read_csv함수로 읽어들여오�
 get_graph(인수: 테이블명, total 사용 여부=기본값 False, return Folium map 객체) - folium graph를 사용 목적에 따라 가져오는 function.   
 기본적으로는 인수로 들어온 전체 테이블을 조회하여  addr_code의 숫자를 세어 해당 점포 수를 누적시킨다.   
 total 사용할 시에는 addr_code 값을 키로, total 값을 밸류로 사용하여 그래프를 생성한다.   
-기본적으로는 인수로 들어온 전체 테이블을 조회하여  addr_code의 숫자를 세어 해당 점포 수를 누적시킨다.   
-total 사용할 시에는 addr_code 값을 키로, total 값을 밸류로 사용하여 그래프를 생성한다.
 <img src="/img/screenshot2.png">
 <img src="/img/screenshot3.png">
 ## 3. FAQ
