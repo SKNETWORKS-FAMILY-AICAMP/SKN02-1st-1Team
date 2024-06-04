@@ -8,8 +8,9 @@ import json
 import pandas as pd
 import streamlit as st
 
-### 변수 ###
+st.set_page_config(page_title="SKN 2기 1조 - 자동차 현황 및 영업점 분석")
 
+### 변수 ###
 
 
 ### CLASS DECLARE ###
