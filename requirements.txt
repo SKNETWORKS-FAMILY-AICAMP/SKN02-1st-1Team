@@ -1,0 +1,6 @@
+streamlit==1.32.0
+folium==0.14.0
+streamlit_folium==0.20.0
+streamlit_option_menu==0.3.13
+pandas==2.2.1
+requests==2.31.0
